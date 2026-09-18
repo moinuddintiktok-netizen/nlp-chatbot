@@ -1,1 +1,9 @@
 
+body {
+    font-family: Arial, sans-serif;
+}
+.chat-box {
+    height: 380px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+}
