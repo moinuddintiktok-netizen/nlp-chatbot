@@ -23,9 +23,9 @@ jobs:
         pip install -r requirements.txt
         pip install pyinstaller
 
-    - name: Build with PyInstaller
+    - name: Build with PyInstaller using Spec File
       run: |
-        pyinstaller --noconsole --onefile --add-data "templates;templates" --add-data "static;static" app.py
+        pyinstaller app.spec
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
